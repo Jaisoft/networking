@@ -1,0 +1,11 @@
+---
+- apiVersion: networking.istio.io/v1beta1
+  kind: VirtualService
+  spec:
+    hosts:
+    - details
+    http:
+    - route:
+      - destination:
+          host: details
+          subset: v1

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-http-client": {
+    "angular-reactive-http-client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-http-client",
+            "outputPath": "dist/angular-reactive-http-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-http-client:build:production"
+              "browserTarget": "angular-reactive-http-client:build:production"
             },
             "development": {
-              "browserTarget": "angular-http-client:build:development"
+              "browserTarget": "angular-reactive-http-client:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-http-client:build"
+            "browserTarget": "angular-reactive-http-client:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "0fcdff54-769d-42eb-b5ca-759abb8e2d9b"
+    "analytics": "9e2dc374-7d9e-472a-a140-41a55df0edbb"
   }
 }
